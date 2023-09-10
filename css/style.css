@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* Start Global Roles */
+/* #region Global Roles */
 *,
 *::before,
 *::after {
@@ -18,6 +18,7 @@ html {
 :root {
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
 }
 
 body {
@@ -33,22 +34,28 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .container {
     width: 750px;
   }
+}
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
+  .container {
     width: 970px;
   }
+}
 
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
+  .container {
     width: 1170px;
   }
 }
-/* End Global Roles */
+/* #endregion */
 
-/* Start Header */
+/* #region header */
 header {
   position: absolute;
   top: 0;
@@ -166,9 +173,9 @@ header nav .search-icon i {
   color: white;
   font-size: 20px;
 }
-/* End Header */
+/* #endregion */
 
-/* Start Landing Section */
+/* #region landing */
 .landing {
   height: 100vh;
 
@@ -278,9 +285,9 @@ header nav .search-icon i {
   border: transparent;
   background-color: var(--main-color);
 }
-/* End Landing Section */
+/* #endregion */
 
-/* Start Services Section */
+/* #region services */
 .services {
   padding: 100px 0;
 }
@@ -330,4 +337,322 @@ header nav .search-icon i {
     margin-bottom: 10px;
   }
 }
-/* End Services Section */
+/* #endregion */
+
+/* #region feature */
+.features {
+  height: 600px;
+  padding: var(--section-padding) 0;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+  
+  background-image: url(../images/design-features.jpeg);
+  background-size: cover;
+}
+
+.features::before {
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.features div {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.features .image {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .features .image {
+    display: none;
+  }
+}
+
+.features .image img {
+  position: relative;
+  bottom: -150px;
+}
+
+.features .text {
+  padding: 50px;
+  color: white;
+
+  background-color: var(--transparent-color);
+}
+
+.features .text h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.features .text ul li{
+  padding: 15px 0;
+}
+
+/* has new idea to learn */
+.features .text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+}
+/* #endregion */
+
+/* #region portofolio */
+.portofolio {
+  padding: var(--section-padding) 0;
+}
+
+/* #region container */
+.portofolio .container ul {
+  display: flex;
+  justify-content: center;
+}
+
+.portofolio .container ul li {
+  padding: 10px;
+  text-transform: capitalize;
+
+  transition: 0.3s linear;
+}
+
+.portofolio li:first-child {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.portofolio li:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+/* #endregion */
+
+/* #region images-container using grid */
+/* .imgs-container {
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .imgs-container {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (min-width: 991px) {
+  .imgs-container {
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+
+.imgs-container figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.imgs-container figure img {
+  max-width: 100%;
+  transition: 0.3s linear;
+}
+
+.imgs-container figure figcaption {
+  width: 100%;
+  padding: 20px;
+
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+
+  line-height: 1.6;
+
+  transition: 0.3s linear;
+  background-color: white;
+  border-top-right-radius: 100%;
+}
+
+@media (min-width: 768px) {
+  .imgs-container figure:hover img {
+    transform: scale(1.1) rotate(3deg);
+  }
+  
+  .imgs-container figure:hover figcaption {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .imgs-container figure figcaption {
+    bottom: 0;
+  }
+}
+
+.imgs-container figure figcaption span {
+  color: var(--main-color);
+} */
+/* #endregion */
+
+/* #region imgs-container using flex */
+.imgs-container {
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgs-container figure {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .imgs-container figure {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 991px) {
+  .imgs-container figure {
+    flex-basis: 25%;
+  }
+}
+
+.imgs-container figure img {
+  max-width: 100%;
+  transition: 0.3s linear;
+}
+
+.imgs-container figure figcaption {
+  width: 100%;
+  padding: 20px;
+
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+
+  line-height: 1.6;
+
+  transition: 0.3s linear;
+  background-color: white;
+  border-top-right-radius: 100%;
+}
+
+@media (min-width: 768px) {
+  .imgs-container figure:hover img {
+    transform: scale(1.1) rotate(3deg);
+  }
+  
+  .imgs-container figure:hover figcaption {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .imgs-container figure figcaption {
+    bottom: 0;
+  }
+}
+
+.imgs-container figure figcaption span {
+  color: var(--main-color);
+}
+/* #endregion */
+
+.portofolio a {
+  display: block;
+
+  width: fit-content;
+  margin: 0 auto;
+  padding: 15px 20px;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: white;
+  background: var(--main-color);
+}
+/* #endregion portofolio */
+
+/* #region awesome-video */
+.awesome-video {
+  position: relative;
+}
+
+.awesome-video::before {
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.awesome-video video {
+  max-width: 100%;
+}
+
+.awesome-video .content {
+  width: 100%;
+  padding: 50px 0;
+  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+  color: white;
+  background-color: var(--transparent-color);
+}
+
+.awesome-video .content h1 {
+  margin: 0 0 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.awesome-video .content p {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.awesome-video .content a {
+  display: block;
+  margin: auto;
+
+  padding: 15px 20px;
+  width: fit-content;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  color: white;
+  background-color: black;
+}
+
+/* #endregion */
