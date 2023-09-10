@@ -279,3 +279,55 @@ header nav .search-icon i {
   background-color: var(--main-color);
 }
 /* End Landing Section */
+
+/* Start Services Section */
+.services {
+  padding: 100px 0;
+}
+
+@media (min-width: 768px) {
+  .services .content {
+    display: grid;
+    gap: 60px 40px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  } 
+} 
+
+.services .card {
+  display: flex;
+}
+
+.services .card i {
+  margin-right: 30px;
+}
+
+.services .card .text h3 {
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.services .card .text p {
+  color: #777;
+  line-height: 2;
+}
+
+@media (max-width: 767px) {
+  .services .card {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .services .card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .services .card i {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .services .card .text h3 {
+    margin-bottom: 10px;
+  }
+}
+/* End Services Section */

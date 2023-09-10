@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recreating Leon website based on the existing design">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Recreating Leon website based on the existing design">
+    <title>Kasber clonning</title>
 
-  <title>Kasber clonning</title>
-
-  <!-- Render all elemets normally -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <!-- Font awesome library -->
-  <link rel="stylesheet" href="css/all.min.css">
-  <!-- style sheets -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <a class="logo" href="#">
-        <img src="images/logo (1).png" alt="kasber-logo" decoding="async">
-      </a>
-      <nav>
-        <i class="toggle-menu fas fa-bars toggle-menu"></i>
-        <ul>
-          <li>
-            <a class="active" href="#home">home</a>
-          </li>
-          <li>
-            <a href="#services">services</a>
-          </li>
-          <li>
-            <a href="#portfolio">portfolio</a>
-          </li>
-          <li>
-            <a href="#about">about</a>
-          </li>
-          <li>
-            <a  href="#pricing">pricing</a>
-          </li>
-          <li>
-            <a href="#contact">contact</a>
-          </li>
-        </ul>
-        <div class="search-icon">
-          <i class="fas fa-search"></i>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <section class="landing">
-    <div class="overlay"></div>
-    <div class="text">
-      <div class="content">
-        <h2>Hello World! <br> We Are Kasper We Make Art.</h2>
-        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+    <!-- Render all elemets normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- style reusable components -->
+    <link rel="stylesheet" href="css/components.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="images/logo (1).png" alt="kasber-logo" decoding="async">
+        </a>
+        <nav>
+          <i class="toggle-menu fas fa-bars toggle-menu"></i>
+          <ul>
+            <li>
+              <a class="active" href="#home">home</a>
+            </li>
+            <li>
+              <a href="#services">services</a>
+            </li>
+            <li>
+              <a href="#portfolio">portfolio</a>
+            </li>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a  href="#pricing">pricing</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </nav>
       </div>
-    </div>
-    <i class="fas fa-angle-left change-background fa-2x"></i>
-    <i class="fas fa-angle-right change-background fa-2x"></i>
-    <ul>
-      <li></li>
-      <li class="active"></li>
-      <li></li>
-    </ul>
-  </section>
-</body>
+    </header>
+    <section class="landing">
+      <div class="overlay"></div>
+      <div class="text">
+        <div class="content">
+          <h2>Hello World! <br> We Are Kasper We Make Art.</h2>
+          <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+        </div>
+      </div>
+      <i class="fas fa-angle-left change-background fa-2x"></i>
+      <i class="fas fa-angle-right change-background fa-2x"></i>
+      <ul>
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+      </ul>
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <h1 class="special-heading">services</h1>
+        <p>
+          Curabitur arcu erat, accumsan id imperdiet et, 
+          porttitor at sem. Mauris blandit aliquet elit, 
+          eget tincidunt.
+        </p>
+        <div class="content">
+          <div class="card">
+            <i class="fas fa-desktop fa-3x"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fas fa-cog fa-3x"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fas fa-pencil-ruler fa-3x"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fas fa-camera fa-3x"></i>
+            <div class="text">
+              <h3>Vorem amet intuitive</h3>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
