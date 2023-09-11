@@ -53,6 +53,7 @@ ul {
     width: 1170px;
   }
 }
+
 /* #endregion */
 
 /* #region header */
@@ -115,10 +116,10 @@ header nav ul {
     display: none;
   }
 
-  header nav .toggle-menu:hover + ul {
+  header nav .toggle-menu:hover+ul {
     display: flex;
     flex-direction: column;
-    
+
     position: absolute;
     top: 100%;
     left: 0;
@@ -173,6 +174,7 @@ header nav .search-icon i {
   color: white;
   font-size: 20px;
 }
+
 /* #endregion */
 
 /* #region landing */
@@ -273,7 +275,7 @@ header nav .search-icon i {
 
 .landing ul li {
   display: block;
-  
+
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -285,6 +287,7 @@ header nav .search-icon i {
   border: transparent;
   background-color: var(--main-color);
 }
+
 /* #endregion */
 
 /* #region services */
@@ -297,8 +300,8 @@ header nav .search-icon i {
     display: grid;
     gap: 60px 40px;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  } 
-} 
+  }
+}
 
 .services .card {
   display: flex;
@@ -337,6 +340,7 @@ header nav .search-icon i {
     margin-bottom: 10px;
   }
 }
+
 /* #endregion */
 
 /* #region feature */
@@ -350,7 +354,7 @@ header nav .search-icon i {
   position: relative;
 
   overflow: hidden;
-  
+
   background-image: url(../images/design-features.jpeg);
   background-size: cover;
 }
@@ -402,7 +406,7 @@ header nav .search-icon i {
   margin-bottom: 40px;
 }
 
-.features .text ul li{
+.features .text ul li {
   padding: 15px 0;
 }
 
@@ -415,6 +419,7 @@ header nav .search-icon i {
   position: relative;
   top: 1px;
 }
+
 /* #endregion */
 
 /* #region portofolio */
@@ -444,6 +449,7 @@ header nav .search-icon i {
   color: white;
   background-color: var(--main-color);
 }
+
 /* #endregion */
 
 /* #region images-container using grid */
@@ -562,7 +568,7 @@ header nav .search-icon i {
   .imgs-container figure:hover img {
     transform: scale(1.1) rotate(3deg);
   }
-  
+
   .imgs-container figure:hover figcaption {
     bottom: 0;
   }
@@ -577,6 +583,7 @@ header nav .search-icon i {
 .imgs-container figure figcaption span {
   color: var(--main-color);
 }
+
 /* #endregion */
 
 .portofolio a {
@@ -593,6 +600,7 @@ header nav .search-icon i {
   color: white;
   background: var(--main-color);
 }
+
 /* #endregion portofolio */
 
 /* #region awesome-video */
@@ -620,7 +628,7 @@ header nav .search-icon i {
 .awesome-video .content {
   width: 100%;
   padding: 50px 0;
-  
+
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -650,7 +658,7 @@ header nav .search-icon i {
 
   text-decoration: none;
   text-transform: uppercase;
-  
+
   color: white;
   background-color: black;
 }
@@ -677,6 +685,7 @@ header nav .search-icon i {
     margin-top: -50px;
   }
 }
+
 /* #endregion */
 
 /* #region statistics */
@@ -710,11 +719,11 @@ header nav .search-icon i {
 
 .stats .container .card {
   padding: 50px;
-  
+
   position: relative;
 
   text-align: center;
- 
+
   color: white;
   background-color: var(--transparent-color);
 }
@@ -740,13 +749,13 @@ header nav .search-icon i {
 .stats .container .card i {
   width: 40px;
   height: 40px;
-  
+
   margin: 0 auto 30px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   border-radius: 50%;
 
   background-color: black;
@@ -779,12 +788,12 @@ header nav .search-icon i {
 /* #region common properties for testominal and skills */
 
 @media (min-width: 992px) {
-  .progress .container > div {
+  .progress .container>div {
     flex-basis: 45%;
   }
 }
 
-.progress .container > div > h2 {
+.progress .container>div>h2 {
   margin-bottom: 30px;
 
   text-align: center;
@@ -792,13 +801,14 @@ header nav .search-icon i {
   text-transform: uppercase;
 }
 
-.progress .container > div > p {
+.progress .container>div>p {
   margin-bottom: 60px;
-  
+
   color: #777;
   line-height: 2;
   text-align: center;
 }
+
 /* #endregion */
 
 /* #region testominals */
@@ -862,11 +872,13 @@ header nav .search-icon i {
   border-color: var(--main-color);
   background-color: var(--main-color);
 }
+
 /* #endregion */
 
 /* #region skills */
-.skills .content > div { 
-  margin-bottom: 40px;;
+.skills .content>div {
+  margin-bottom: 40px;
+  ;
 }
 
 .skills .content h4 {
@@ -897,7 +909,7 @@ header nav .search-icon i {
   top: -40px;
   right: 0;
   transform: translate(50%);
-  
+
   text-align: center;
 
   color: white;
@@ -907,7 +919,7 @@ header nav .search-icon i {
 
 .skills .content .progress-bar span::after {
   content: "";
-  
+
   position: absolute;
   right: 0;
   top: -14px;
@@ -932,6 +944,7 @@ header nav .search-icon i {
 .php-skill .progress-bar span {
   width: 90%;
 }
+
 /* #endregion */
 /* #endregion */
 
@@ -958,7 +971,7 @@ header nav .search-icon i {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   background-color: rgb(0 0 0 / 60%);
 }
 
@@ -971,14 +984,338 @@ header nav .search-icon i {
   margin-bottom: 20px;
   font-size: 30px;
 }
+
 /* #endregion */
 
 /* #region pricing */
 .pricing {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+}
 
-  
+.pricing .content {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.pricing .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+/* #region role */
+.pricing .plan .role {
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plan .role h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.pricing .plan .role span {
+  font-size: 60px;
+  font-weight: bold;
+
+  position: relative;
+}
+
+.pricing .plan .role span::before {
+  content: "$";
+
+  position: absolute;
+  top: 0;
+  left: -25px;
+
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.pricing .plan .role span::after {
+  content: "/Mo";
+  font-size: 20px;
+
+  position: absolute;
+  bottom: 10px;
+  right: -50px;
+}
+
+/* #endregion */
+
+.pricing .plan ul {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plan ul li {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+
+  text-transform: capitalize;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--main-color);
+  }
+}
+
+.pricing .plan .buy a {
+  display: block;
+
+  color: black;
+  padding: 20px;
+  margin: 30px auto;
+  width: fit-content;
+
+  text-decoration: none;
+
+  text-transform: capitalize;
+  border: 1px solid var(--main-color);
+}
+
+.pricing .foot {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pricing .foot a {
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+  padding: 15px 30px;
+
+  font-size: 15px;
+  text-decoration: none;
+
+  color: white;
+  background-color: var(--main-color);
+
+}
+
+/* #endregion */
+
+/* #region subscribe */
+.subscibe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+
+  background-size: cover;
+  background-image: url(../images/subscribe.jpeg);
+
+  position: relative;
+}
+
+.subscibe::before {
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.subscibe .container {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .subscibe .container {
+    flex-direction: column;
+  }
+}
+
+.subscibe form {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  width: 500px;
+  max-width: 100%;
+}
+
+.subscibe form ::placeholder {
+  color: white;
+}
+
+.subscibe form i {
+  color: white;
+
+  position: absolute;
+  left: 25px;
+}
+
+.subscibe form input[type="email"] {
+  width: calc(100% - 150px);
+  padding: 20px 20px 20px 60px;
+
+  border: 1px solid white;
+  border-right: none;
+
+  color: white;
+  background-color: transparent;
+  caret-color: var(--main-color);
+}
+
+.subscibe form input[type="submit"] {
+  width: 150px;
+  padding: 20px;
+
+  border: 1px solid white;
+  border-left: none;
+
+  text-transform: uppercase;
+
+  color: white;
+  background-color: var(--main-color);
+}
+
+.subscibe form input[type="email"],
+.subscibe form input[type="submit"] {
+  outline: none;
+}
+
+.subscibe p {
+  margin-left: 50px;
+  color: white;
+  line-height: 2;
+}
+
+@media (max-width: 991px) {
+  .subscibe p {
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+/* #endregion */
+
+/* #region contact */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .content form {
+  flex-basis: 70%;
+}
+
+@media (max-width: 991px) {
+  .contact .content form {
+    order: 1;
+  }
+}
+
+.contact .content form > * {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  caret-color: var(--main-color);
+}
+
+.contact .content form > *:focus {
+  outline: none;
+}
+
+.contact textarea {
+  height: 200px;
+  resize: none;
+}
+
+.contact .content form input[type="submit"] {
+  width: 150px;
+  padding: 20px;
+
+  border: none;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  text-transform: uppercase;
+
+  color: white;
+  background-color: var(--main-color);
+
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .contact .content {
+    flex-direction: column;
+  }
+
+  .contact .content form {
+    margin-bottom: 50px;
+  }
+
+  .contact .content .info {
+    text-align: center;
+  }
+
+  .contact .content form input[type="submit"] {
+    margin: 0 auto;
+  }
+}
+
+.contact .info {
+  flex-basis: 25%;
+}
+
+@media (max-width: 991px) {
+  .contact .info {
+    margin-bottom: 20px;
+  }
+}
+
+.contact .info h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .contact .info h3 {
+    margin-bottom: 10px;
+  }
+}
+
+.contact .info .phone-numbers {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 991px) {
+  .contact .info .phone-numbers {
+    order: -1;
+    margin-bottom: 20px;
+  }
+}
+
+.contact .info .phone-numbers p {
+  color: #777;
+  margin-bottom: 10px
+}
+
+.contact .info address {
+  color: #777;
+  line-height: 2;
 }
 /* #endregion */
 
@@ -994,13 +1331,13 @@ footer {
 }
 
 footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(0 0 0 / 60%);
-    width: 100%;
-    height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
 }
 
 footer .container {
@@ -1049,4 +1386,5 @@ footer .container .social-icons i {
 footer .container .copyright span {
   color: var(--main-color);
 }
+
 /* #endregion */
