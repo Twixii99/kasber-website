@@ -764,3 +764,289 @@ header nav .search-icon i {
 
 /* #endregion */
 
+/* #region progrss */
+.progress {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.progress .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* #region common properties for testominal and skills */
+
+@media (min-width: 992px) {
+  .progress .container > div {
+    flex-basis: 45%;
+  }
+}
+
+.progress .container > div > h2 {
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.progress .container > div > p {
+  margin-bottom: 60px;
+  
+  color: #777;
+  line-height: 2;
+  text-align: center;
+}
+/* #endregion */
+
+/* #region testominals */
+.testominals .card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.testominals .card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+.testominals .card .text {
+  border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 767px) {
+  .testominals .card {
+    flex-direction: column;
+  }
+
+  .testominals .card img {
+    margin: 0 0 20px;
+  }
+
+  .testominals .card .text {
+    text-align: center;
+  }
+}
+
+.testominals .text p:first-child {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.testominals .text .name {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.testominals ul {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.testominals ul li {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.testominals ul li.active {
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}
+/* #endregion */
+
+/* #region skills */
+.skills .content > div { 
+  margin-bottom: 40px;;
+}
+
+.skills .content h4 {
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.skills .content .progress-bar {
+  height: 30px;
+  background-color: #dedadc;
+}
+
+.skills .content .progress-bar span {
+  display: block;
+  position: relative;
+  background-color: var(--main-color);
+  height: 100%;
+}
+
+.skills .content .progress-bar span::before {
+  content: attr(percentage);
+
+  width: 40px;
+  padding: 4px 0;
+
+  position: absolute;
+  top: -40px;
+  right: 0;
+  transform: translate(50%);
+  
+  text-align: center;
+
+  color: white;
+  background: #333;
+  border-radius: 4px;
+}
+
+.skills .content .progress-bar span::after {
+  content: "";
+  
+  position: absolute;
+  right: 0;
+  top: -14px;
+  transform: translate(50%);
+
+  border: 8px solid transparent;
+  border-top-color: #333;
+}
+
+.adobe-skill .progress-bar span {
+  width: 90%;
+}
+
+.web-dev-skill .progress-bar span {
+  width: 85%;
+}
+
+.js-skill .progress-bar span {
+  width: 80%;
+}
+
+.php-skill .progress-bar span {
+  width: 90%;
+}
+/* #endregion */
+/* #endregion */
+
+/* #region qoute */
+.wise-qoute {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+
+  position: relative;
+
+  color: white;
+  text-align: center;
+
+  background-size: cover;
+  background-image: url(../images/quote.jpeg);
+}
+
+.wise-qoute::before {
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.wise-qoute .container {
+  position: relative;
+}
+
+.wise-qoute q {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+/* #endregion */
+
+/* #region pricing */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+
+  
+}
+/* #endregion */
+
+/* #region footer */
+footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+
+  position: relative;
+
+  background-image: url(../images/footer-image.jpeg);
+  background-size: cover;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+}
+
+footer .container {
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+footer .container img {
+  margin-bottom: 40px;
+}
+
+footer .container h2 {
+  width: fit-content;
+
+  padding: 20px;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 auto 20px;
+
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+footer .container h2::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+
+  background-color: white;
+}
+
+footer .container .social-icons {
+  margin-bottom: 60px;
+}
+
+footer .container .social-icons i {
+  padding: 10px 15px;
+}
+
+footer .container .copyright span {
+  color: var(--main-color);
+}
+/* #endregion */
